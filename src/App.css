@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+#root {
+  color: white;
+  background-color: teal;
+  font-size: 16px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.layout {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 800px;
+  color: black;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   min-height: 100vh;
+}
+.nav-bar {
+  border: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  height: 50px;
+}
+.input-area {
+  display: flex;
+  border-radius: 12px;
+  background-color: #eeeeee;
+  border: 1px solid #eee;
+  gap: 20px;
+  padding: 30px;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.input-detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.add-button {
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: teal;
+  font-size: 13px;
+  font-weight: 700;
+}
+.input-detail input {
+  width: 240px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 12px;
+}
+.todo-list {
+  padding: 0px 24px;
+}
+h2 {
+  margin: 0.8em 0px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.not-done {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.done {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.box {
+  border: 4px solid teal;
+  border-radius: 10px;
+  padding: 12px 24px 24px 24px;
+  width: 330px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.delete-button {
+  border: 2px solid red;
+  background-color: white;
+  border-radius: 5px;
+  width: 50%;
+  height: 40px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.success-button {
+  border: 2px solid green;
+  background-color: white;
+  border-radius: 5px;
+  width: 50%;
+  height: 40px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.buttons {
+  gap: 10px;
+  margin-top: 24px;
+  display: flex;
+}
+.red {
+  border: 3px solid red;
+  background-color: #eee;
+}
+.link {
+  text-decoration: none;
+  color: teal;
+  display: flex;
+  justify-content: right;
+}
+.detail-box {
+  border: 2px solid rgb(238, 238, 238);
+  border-radius: 10px;
+  padding: 12px 24px 24px 24px;
+  width: 600px;
+  height: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 130px auto 0px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.space-between {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detail-box button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  width: 120px;
+  height: 40px;
+  border: 2px solid rgb(238, 238, 238);
+  cursor: pointer;
 }
