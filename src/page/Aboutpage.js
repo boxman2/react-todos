@@ -3,14 +3,16 @@ import { useSelector } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
 
 const Aboutpage = () => {
-  const todos = useSelector((state) => state.todos.todos);
+  const { todos } = useSelector((state) => state.todos);
+
   const { id } = useParams();
   const navigate = useNavigate();
   const goHomePage = () => {
     navigate("/");
   };
-  const [{ title, body }] = todos.filter((item) => item.id === parseInt(id));
+  const [{ title, body }] = todos.filter((item) => item.id === id);
   //14번줄 리듀스로옮기기
+  // 데이터가없으면 홈으로 돌아가라 + 404
 
   return (
     <div className="detail-box">

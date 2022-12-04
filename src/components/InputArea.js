@@ -9,11 +9,19 @@ const InputArea = () => {
     const { name, value } = e.target;
     setInput({ ...input, [name]: value });
   };
+
   const add = (e) => {
     e.preventDefault();
     const { title, body } = input;
     if (title === "" || body === "") return;
-    dispatch(addTodo({ id: Date.now(), title, body, isDone: false }));
+    dispatch(
+      addTodo({
+        id: Math.random().toString(36).substr(2, 16),
+        title,
+        body,
+        isDone: false,
+      })
+    );
     setInput({ title: "", body: "" });
   };
   return (

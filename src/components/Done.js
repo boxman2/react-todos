@@ -2,7 +2,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { completeTodo, removeTodo } from "../redux/modules/todos";
-
+//style 컴포넌트로 바꾸기
+//링크 네비게이트 차이 점 알기
 const Done = ({ user, state }) => {
   const dispatch = useDispatch();
   let { isDone, title, body, id } = user;
@@ -40,5 +41,4 @@ const Done = ({ user, state }) => {
     </div>
   );
 };
-
 export default Done;
