@@ -13,8 +13,6 @@ export const removeTodo = (payload) => {
 export const completeTodo = (payload) => {
   return { type: COMPLETE_TODO, payload };
 };
-//너무 중요@@ 서버랑 데이터통신할때도 많이쓴ㄴ다 /// 비동기작업할때 중요!!!!!
-// const saveData = JSON.parse(localStorage.getItem("todo")) ?? [];
 
 // const saveData = JSON.parse(localStorage.getItem("todo")) || []; ???? 왜안되는지
 const saveData = JSON.parse(localStorage.getItem("todo"))
@@ -26,7 +24,7 @@ const initialState = {
 
 //리터러블은 맞는데 데이터가없으니까 그려줄수없어   데이터가없을때를 가정
 
-const e = (state = initialState, action) => {
+export const e = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:
       return {
@@ -49,5 +47,3 @@ const e = (state = initialState, action) => {
       return state;
   }
 };
-
-export default e;
