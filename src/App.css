@@ -3,39 +3,17 @@
   background-color: teal;
   font-size: 16px;
 }
-.layout {
-  margin: 0 auto;
-  max-width: 1200px;
-  min-width: 800px;
-  color: black;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  min-height: 100vh;
-}
-.nav-bar {
-  border: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  align-items: center;
-  height: 50px;
-}
-.input-area {
-  display: flex;
-  border-radius: 12px;
-  background-color: #eeeeee;
-  border: 1px solid #eee;
-  gap: 20px;
-  padding: 30px;
-  justify-content: space-between;
-  font-weight: 700;
-}
 .input-detail {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.input-detail input {
+  width: 240px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 12px;
 }
 .add-button {
   width: 140px;
@@ -46,13 +24,6 @@
   background-color: teal;
   font-size: 13px;
   font-weight: 700;
-}
-.input-detail input {
-  width: 240px;
-  height: 40px;
-  border-radius: 10px;
-  border: none;
-  padding: 0 12px;
 }
 .todo-list {
   padding: 0px 24px;
