@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import Done from "../components/Done";
+import Form from "./Form";
 //const !!!!
 const Body = () => {
   const todoList = useSelector((state) => state.todos.todos);
@@ -11,7 +11,7 @@ const Body = () => {
         {todoList.map((a) => {
           const { isDone, id } = a;
           return (
-            !isDone && <Done state={"완료"} user={a} key={`title-${id}`} />
+            !isDone && <Form state={"완료"} user={a} key={`title-${id}`} />
           );
         })}
       </div>
@@ -19,7 +19,7 @@ const Body = () => {
       <div className="done">
         {todoList.map((a) => {
           const { isDone, id } = a;
-          return isDone && <Done state={"취소"} user={a} key={`title-${id}`} />;
+          return isDone && <Form state={"취소"} user={a} key={`title-${id}`} />;
         })}
       </div>
     </section>

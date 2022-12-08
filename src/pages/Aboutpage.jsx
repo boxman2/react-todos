@@ -11,6 +11,8 @@ const Aboutpage = () => {
     navigate("/");
   };
   const [{ title, body }] = todos.filter((item) => item.id === id);
+  // const a = todos.find((item) => item.id === id);
+  // console.log(a);
   //14번줄 리듀스로옮기기
   // 데이터가없으면 홈으로 돌아가라 + 404
 
@@ -27,3 +29,9 @@ const Aboutpage = () => {
 };
 
 export default Aboutpage;
+
+// src/pages/Work.js
+
+// src/pages/Works.js
+
+// src/pages/Work.js

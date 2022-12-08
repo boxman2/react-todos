@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../redux/modules/todos";
+import { InputAreas, InputDetail } from "../Style/style";
 
 const InputArea = () => {
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ const InputArea = () => {
     setInput({ title: "", body: "" });
   };
   return (
-    <form className="input-area" onSubmit={add}>
+    <InputAreas onSubmit={add}>
       <div className="input-detail">
         <div>제목</div>
         <input
@@ -45,7 +46,7 @@ const InputArea = () => {
         ></input>
       </div>
       <button className="add-button">추가하기</button>{" "}
-    </form>
+    </InputAreas>
   );
 };
 
